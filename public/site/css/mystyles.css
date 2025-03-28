@@ -1,0 +1,1018 @@
+input, select, textarea {
+    height: 52px !important;
+    width: 100% !important;
+    background-color:  rgba(74, 40, 18, 0.04) !important;
+    font-size: 14px !important;
+    font-style: italic !important;
+    font-weight: 500 !important;
+    margin-bottom: 15px !important;
+    border-radius: 0 !important;
+    border: none !important;
+
+    border-bottom: 2px solid #4A2812 !important;
+
+}
+
+input:hover, select:hover, textarea:hover {
+
+    border-bottom: 4px solid #4A2812 !important;
+
+}
+
+input::placeholder, select::placeholder, textarea::placeholder {
+
+    font-size: 12px !important;
+    color: rgb(147, 146, 150) !important;
+
+}
+
+.mybutton {
+    padding: 10px !important;
+    font-weight: 700 !important;
+    fill: #FFFFFF !important;
+    color: #FFFFFF !important;
+    border-style: solid !important;
+    border-width: 2px 2px 2px 2px !important;
+    background-color: #FF9500 !important;
+}
+.mybutton:hover {
+    padding: 10px !important;
+    font-weight: 700 !important;
+    fill: #FF9500 !important;
+    color: #FF9500 !important;
+    border-style: solid !important;
+    border-width: 2px 2px 2px 2px !important;
+    border-color: #FF9500 !important;
+    background-color: #FFFFFF !important;
+}
+
+
+/* Estilos para a caixa de seleção */
+.form-check-input[type="checkbox"] {
+    width: 20px!important; /* Largura desejada da checkbox */
+    height: 20px!important; /* Altura desejada da checkbox */
+    margin-right: 10px!important; /* Espaçamento entre a checkbox e o texto */
+    position: relative!important; /* Define a posição relativa para que possamos posicionar o marcador de forma absoluta */
+  }
+
+  /* Estilos para o "x" dentro da caixa de seleção quando marcada */
+  .form-check-input[type="checkbox"]:checked::before {
+    content: "\2714"!important; /* Código Unicode para o "x" */
+    display: inline-block!important;
+    font-size: 16px!important; /* Tamanho do "x" */
+    width: 20px!important; /* Largura da caixa de seleção */
+    height: 20px!important; /* Altura da caixa de seleção */
+    text-align: center!important; /* Alinha o "x" ao centro da caixa de seleção */
+    line-height: 20px!important; /* Altura da linha para alinhar verticalmente o "x" */
+    background-color: #179721!important; /* Cor de fundo da caixa de seleção quando marcada */
+    color: white!important; /* Cor do "x" */
+    position: absolute!important; /* Posiciona o "x" de forma absoluta dentro da caixa de seleção */
+    top: 0!important; /* Alinha o "x" no topo da caixa de seleção */
+    left: 0!important; /* Alinha o "x" no canto esquerdo da caixa de seleção */
+  }
+
+
+  .form-check-input[type="radio"] {
+    width: 20px!important; /* Largura desejada da checkbox */
+    height: 20px!important; /* Altura desejada da checkbox */
+    margin-right: 10px!important; /* Espaçamento entre a checkbox e o texto */
+    position: relative!important; /* Define a posição relativa para que possamos posicionar o marcador de forma absoluta */
+  }
+
+  /* Estilos para o "x" dentro da caixa de seleção quando marcada */
+  .form-check-input[type="radio"]:checked::before {
+    content: "\2714"!important; /* Código Unicode para o "x" */
+    display: inline-block!important;
+    font-size: 16px!important; /* Tamanho do "x" */
+    width: 20px!important; /* Largura da caixa de seleção */
+    height: 20px!important; /* Altura da caixa de seleção */
+    text-align: center!important; /* Alinha o "x" ao centro da caixa de seleção */
+    line-height: 20px!important; /* Altura da linha para alinhar verticalmente o "x" */
+    background-color: #179721!important; /* Cor de fundo da caixa de seleção quando marcada */
+    color: white!important; /* Cor do "x" */
+    position: absolute!important; /* Posiciona o "x" de forma absoluta dentro da caixa de seleção */
+    top: 0!important; /* Alinha o "x" no topo da caixa de seleção */
+    left: 0!important; /* Alinha o "x" no canto esquerdo da caixa de seleção */
+  }
+
+  .avalie {
+
+    position: fixed;
+    width: 180px;
+    height: 50px;
+    bottom: 300px;
+    padding-top: 10px;
+    text-align: center;
+    z-index: 100;
+    background: #FF9500;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    opacity: 1;
+    display: inline-block;
+}
+
+.avalie:hover {
+    fill: #FF9500 !important;
+    color: #FF9500 !important;
+    border-style: solid !important;
+    border-width: 2px 2px 2px 2px !important;
+    border-color: #FF9500 !important;
+    background-color: transparent !important;
+}
+
+
+/*======================================================
+#. EL: Countdown Area
+=======================================================*/
+.countdown-layout1 {
+    text-align: center;
+    padding: 6rem 0 3rem;
+    background-position: center;
+  }
+  .countdown-layout1 .countdown-section {
+    text-align: center;
+    height: 120px;
+    background: transparent;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 3rem;
+  }
+  @media only screen and (max-width: 1199px) {
+    .countdown-layout1 .countdown-section {
+      height: 100px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .countdown-layout1 .countdown-section {
+      height: 85px;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    .countdown-layout1 .countdown-section {
+      height: 85px;
+    }
+  }
+  .countdown-layout1 .countdown-section:last-child h2:after {
+    display: none;
+  }
+  .countdown-layout1 .countdown-section:last-child h2:before {
+    display: none;
+  }
+  .countdown-layout1 .countdown-section:first-child h3 {
+    left: 2.5px;
+  }
+  .countdown-layout1 .countdown-section:last-child h3 {
+    left: 2.5px;
+  }
+  .countdown-layout1 .countdown-section h2 {
+    font-size: 74px;
+    line-height: 1.1;
+    color: #fff;
+    font-weight: 700;
+    position: relative;
+    padding: 0 50px;
+    min-width: 200px;
+  }
+  @media only screen and (max-width: 1199px) {
+    .countdown-layout1 .countdown-section h2 {
+      padding: 0 40px;
+      min-width: 190px;
+    }
+  }
+  @media only screen and (max-width: 991px) {
+    .countdown-layout1 .countdown-section h2 {
+      padding: 0 20px;
+      font-size: 55px;
+
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .countdown-layout1 .countdown-section h2 {
+      padding: 0 20px;
+      min-width: 75px;
+      font-size: 40px;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    .countdown-layout1 .countdown-section h2 {
+      font-size: 40px;
+      padding: 0 20px;
+      min-width: 75px;
+    }
+  }
+  .countdown-layout1 .countdown-section h2:after {
+    content: "\f111";
+    font-family: fontawesome;
+    font-size: 12px;
+    color: #fff;
+    position: absolute;
+    right: -5px;
+    transform: translateY(-25%);
+    top: 25%;
+  }
+  @media only screen and (max-width: 767px) {
+    .countdown-layout1 .countdown-section h2:after {
+      font-size: 10px;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    .countdown-layout1 .countdown-section h2:after {
+      font-size: 7px;
+      right: -2.5px;
+    }
+  }
+  .countdown-layout1 .countdown-section h2:before {
+    content: "\f111";
+    font-family: fontawesome;
+    font-size: 12px;
+    color: #fff;
+    position: absolute;
+    right: -5px;
+    transform: translateY(-75%);
+    top: 75%;
+  }
+  @media only screen and (max-width: 767px) {
+    .countdown-layout1 .countdown-section h2:before {
+      font-size: 10px;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    .countdown-layout1 .countdown-section h2:before {
+      font-size: 7px;
+      right: -2.5px;
+    }
+  }
+  .countdown-layout1 .countdown-section h3 {
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 16px;
+  }
+  @media only screen and (max-width: 991px) {
+    .countdown-layout1 .countdown-section h3 {
+      font-size: 16px;
+      bottom: -20px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .countdown-layout1 .countdown-section h3 {
+      font-size: 16px;
+      bottom: -32px;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    .countdown-layout1 .countdown-section h3 {
+      font-size: 14px;
+      bottom: -22px;
+    }
+  }
+  .countdown-layout1 .widget h3::after {
+    display: none;
+  }
+  @media only screen and (max-width: 767px) {
+    .countdown-layout1new .event-countdown {
+      text-align: center;
+    }
+  }
+  .countdown-layout1new .countdown-section {
+    background: #600c73;
+    /* Old Browsers */
+    /* FF3.6+ */
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #600c73), color-stop(100%, #b72d8b));
+    /* Chrome, Safari4+ */
+    /* Chrome10+,Safari5.1+ */
+    /* Opera 11.10+ */
+    /* IE 10+ */
+    background: linear-gradient(to bottom, #600c73 0%, #b72d8b 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b72d8b', endColorstr='#600c73', GradientType=0);
+    /* IE6-9 */
+    text-align: center;
+    height: 130px;
+    display: inline-block;
+    position: relative;
+    margin: 0px 2px 0 2px;
+    padding: 10px 0;
+    border-radius: 4px;
+  }
+  @media only screen and (max-width: 1199px) {
+    .countdown-layout1new .countdown-section {
+      margin-bottom: 10px;
+      padding: 15px 0;
+      height: 118px;
+    }
+  }
+  .countdown-layout1new .countdown-section:last-child h2:after {
+    display: none;
+  }
+  .countdown-layout1new .countdown-section:last-child h2:before {
+    display: none;
+  }
+  .countdown-layout1new .countdown-section:first-child h3 {
+    left: 2.5px;
+  }
+  .countdown-layout1new .countdown-section:last-child h3 {
+    left: 2.5px;
+  }
+  .countdown-layout1new .countdown-section:after {
+    content: "\f111";
+    font-family: fontawesome;
+    font-size: 12px;
+    color: #fff;
+    position: absolute;
+    right: -7px;
+    transform: translateY(-25%);
+    top: 25%;
+    z-index: 99;
+  }
+  @media only screen and (max-width: 767px) {
+    .countdown-layout1new .countdown-section:after {
+      font-size: 10px;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    .countdown-layout1new .countdown-section:after {
+      font-size: 7px;
+      right: -2.5px;
+    }
+  }
+  .countdown-layout1new .countdown-section:before {
+    content: "\f111";
+    font-family: fontawesome;
+    font-size: 12px;
+    color: #fff;
+    position: absolute;
+    right: -7px;
+    transform: translateY(-75%);
+    top: 75%;
+    z-index: 99;
+  }
+  @media only screen and (max-width: 767px) {
+    .countdown-layout1new .countdown-section:before {
+      font-size: 10px;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    .countdown-layout1new .countdown-section:before {
+      font-size: 7px;
+      right: -2.5px;
+    }
+  }
+  .countdown-layout1new .countdown-section:last-child:after {
+    display: none;
+  }
+  .countdown-layout1new .countdown-section:last-child:before {
+    display: none;
+  }
+  .countdown-layout1new .countdown-section h2 {
+    font-size: 60px;
+    line-height: 1.3;
+    color: #fff;
+    font-weight: 700;
+    position: relative;
+    width: 145px;
+  }
+  @media only screen and (max-width: 1199px) {
+    .countdown-layout1new .countdown-section h2 {
+      padding: 0;
+      min-width: 120px;
+      font-size: 48px;
+    }
+  }
+  @media only screen and (max-width: 991px) {
+    .countdown-layout1new .countdown-section h2 {
+      font-size: 58px;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    .countdown-layout1new .countdown-section h2 {
+      font-size: 46px;
+    }
+  }
+  .countdown-layout1new .countdown-section h3 {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  @media only screen and (max-width: 1199px) {
+    .countdown-layout1new .countdown-section h3 {
+      bottom: -1px;
+    }
+  }
+  @media only screen and (max-width: 991px) {
+    .countdown-layout1new .countdown-section h3 {
+      font-size: 16px;
+      bottom: -20px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .countdown-layout1new .countdown-section h3 {
+      font-size: 16px;
+      bottom: -32px;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    .countdown-layout1new .countdown-section h3 {
+      font-size: 14px;
+      bottom: -22px;
+    }
+  }
+  .countdown-layout1new .widget h3::after {
+    display: none;
+  }
+  .countdown-layout2 {
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 30px;
+  }
+  .countdown-layout2 .countdown-section {
+    text-align: center;
+    height: 120px;
+    background: transparent;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 30px;
+  }
+  .countdown-layout2 .countdown-section:last-child h2:after {
+    display: none;
+  }
+  .countdown-layout2 .countdown-section:last-child h2:before {
+    display: none;
+  }
+  .countdown-layout2 .countdown-section:first-child h3 {
+    left: 2.5px;
+  }
+  .countdown-layout2 .countdown-section:last-child h3 {
+    left: 2.5px;
+  }
+  .countdown-layout2 .countdown-section h2 {
+    min-width: 219px;
+    font-size: 8rem;
+    position: relative;
+    line-height: 1.1;
+    font-weight: 700;
+    padding: 0 50px;
+  }
+  @media only screen and (max-width: 1199px) {
+    .countdown-layout2 .countdown-section h2 {
+      padding: 0 40px;
+      min-width: 150px;
+    }
+  }
+  @media only screen and (max-width: 991px) {
+    .countdown-layout2 .countdown-section h2 {
+      padding: 0 30px;
+      min-width: 100px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .countdown-layout2 .countdown-section h2 {
+      padding: 0 20px;
+      min-width: 70px;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    .countdown-layout2 .countdown-section h2 {
+      font-size: 6rem;
+      padding: 0 15px;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    .countdown-layout2 .countdown-section h2 {
+      font-size: 5rem;
+    }
+  }
+  .countdown-layout2 .countdown-section h2:after {
+    content: "\f111";
+    font-family: fontawesome;
+    font-size: 12px;
+    color: #FFFFFF;
+    position: absolute;
+    right: -5px;
+    transform: translateY(-25%);
+    top: 25%;
+  }
+  @media only screen and (max-width: 767px) {
+    .countdown-layout2 .countdown-section h2:after {
+      font-size: 10px;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    .countdown-layout2 .countdown-section h2:after {
+      font-size: 7px;
+      right: -2.5px;
+    }
+  }
+  .countdown-layout2 .countdown-section h2:before {
+    content: "\f111";
+    font-family: fontawesome;
+    font-size: 12px;
+    color: #FFFFFF;
+    position: absolute;
+    right: -5px;
+    transform: translateY(-75%);
+    top: 75%;
+  }
+  @media only screen and (max-width: 767px) {
+    .countdown-layout2 .countdown-section h2:before {
+      font-size: 10px;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    .countdown-layout2 .countdown-section h2:before {
+      font-size: 7px;
+      right: -2.5px;
+    }
+  }
+  .countdown-layout2 .countdown-section:nth-child(1n) h2 {
+    color: #00FFFF;
+  }
+  .countdown-layout2 .countdown-section:nth-child(2n) h2 {
+    color: #00b0ff;
+  }
+  .countdown-layout2 .countdown-section:nth-child(3n) h2 {
+    color: #f50057;
+  }
+  .countdown-layout2 .countdown-section:nth-child(4n) h2 {
+    color: #00FFFF;
+  }
+  .countdown-layout2 .countdown-section h3 {
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+    color: #FFFFFF;
+    font-size: 16px;
+  }
+  @media only screen and (max-width: 1199px) {
+    .countdown-layout2 .countdown-section h3 {
+      bottom: 0px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .countdown-layout2 .countdown-section h3 {
+      bottom: -10px;
+      font-size: 15px;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    .countdown-layout2 .countdown-section h3 {
+      bottom: -10px;
+      font-size: 14px;
+    }
+  }
+  .countdown-layout2 .widget h3::after {
+    display: none;
+  }
+  .widget .countdown-layout3.rt-shortcode h3::after {
+    display: none;
+  }
+  .widget .countdown-layout2.rt-shortcode {
+    margin: auto;
+  }
+  .widget .countdown-layout2.rt-shortcode h3::after {
+    display: none;
+  }
+  .widget .countdown-layout1.rt-shortcode h3::after {
+    display: none;
+  }
+  .countdown-layout2.rt-shortcode .countdown-section h3 {
+    bottom: -36px;
+  }
+  @media only screen and (max-width: 1199px) {
+    .countdown-layout2.rt-shortcode .countdown-section h3 {
+      bottom: -20px;
+    }
+  }
+  @media only screen and (max-width: 991px) {
+    .countdown-layout2.rt-shortcode .countdown-section h3 {
+      bottom: -15px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .countdown-layout2.rt-shortcode .countdown-section h3 {
+      bottom: -5px;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    .countdown-layout2.rt-shortcode .countdown-section h3 {
+      bottom: 28px;
+      font-size: 12px;
+    }
+  }
+  .countdown-layout3.rt-shortcode .countdown-section h3 {
+    bottom: -36px;
+  }
+  @media only screen and (max-width: 1199px) {
+    .countdown-layout3.rt-shortcode .countdown-section h3 {
+      bottom: -20px;
+    }
+  }
+  @media only screen and (max-width: 991px) {
+    .countdown-layout3.rt-shortcode .countdown-section h3 {
+      bottom: -15px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .countdown-layout3.rt-shortcode .countdown-section h3 {
+      bottom: -5px;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    .countdown-layout3.rt-shortcode .countdown-section h3 {
+      bottom: 28px;
+      font-size: 12px;
+    }
+  }
+  .countdown-layout2 .countdown-section h3 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    color: #ffffff;
+    font-size: 16px;
+  }
+  @media only screen and (max-width: 991px) {
+    .ls-layer .countdown-layout3 {
+      background-size: 100% center !important;
+    }
+  }
+  .countdown-layout3 {
+    text-align: center;
+    margin-bottom: 5rem;
+    background-image: url('../img/figure9.png');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  @media only screen and (max-width: 479px) {
+    .countdown-layout3 {
+      margin-bottom: 0;
+    }
+  }
+  .countdown-layout3 .countdown-section {
+    position: relative;
+    text-align: center;
+    height: 120px;
+    background: transparent;
+    display: inline-block;
+    margin-top: 30px;
+  }
+  .countdown-layout3 .countdown-section:last-child h2:after {
+    display: none;
+  }
+  .countdown-layout3 .countdown-section:last-child h2:before {
+    display: none;
+  }
+  .countdown-layout3 .countdown-section:first-child h3 {
+    left: 0.25px;
+  }
+  .countdown-layout3 .countdown-section:last-child h3 {
+    left: 0.25px;
+  }
+  .countdown-layout3 .countdown-section h2 {
+    min-width: 219px;
+    font-size: 6rem;
+    position: relative;
+    line-height: 1.1;
+    font-weight: 900;
+    color: #FFFFFF;
+    padding: 0 50px;
+    bottom: -30px;
+  }
+  @media only screen and (max-width: 1199px) {
+    .countdown-layout3 .countdown-section h2 {
+      padding: 0 40px;
+      min-width: 150px;
+    }
+  }
+  @media only screen and (max-width: 991px) {
+    .countdown-layout3 .countdown-section h2 {
+      padding: 0 30px;
+      min-width: 100px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .countdown-layout3 .countdown-section h2 {
+      padding: 0 20px;
+      min-width: 70px;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    .countdown-layout3 .countdown-section h2 {
+      font-size: 6rem;
+      padding: 0 15px;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    .countdown-layout3 .countdown-section h2 {
+      font-size: 5rem;
+    }
+  }
+  .countdown-layout3 .countdown-section h2:after {
+    content: "";
+    height: 60%;
+    width: 1px;
+    background-color: #FFFFFF;
+    position: absolute;
+    right: -0.5px;
+    transform: translateY(-50%);
+    top: 50%;
+  }
+  .countdown-layout3 .countdown-section h3 {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    right: 0;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    font-size: 20px;
+  }
+  @media only screen and (max-width: 767px) {
+    .countdown-layout3 .countdown-section h3 {
+      font-size: 15px;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    .countdown-layout3 .countdown-section h3 {
+      font-size: 14px;
+    }
+  }
+  .countdown-layout3new {
+    text-align: center;
+    padding: 4rem 0 0rem;
+  }
+  @media only screen and (max-width: 991px) {
+    .countdown-layout3new {
+      padding: 6rem 0 3rem;
+    }
+  }
+  .countdown-layout3new .countdown-section {
+    text-align: center;
+    height: 120px;
+    background: transparent;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 3rem;
+  }
+  @media only screen and (max-width: 1199px) {
+    .countdown-layout3new .countdown-section {
+      height: 100px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .countdown-layout3new .countdown-section {
+      height: 85px;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    .countdown-layout3new .countdown-section {
+      height: 85px;
+    }
+  }
+  .countdown-layout3new .countdown-section:last-child h2:after {
+    display: none;
+  }
+  .countdown-layout3new .countdown-section:last-child h2:before {
+    display: none;
+  }
+  .countdown-layout3new .countdown-section:first-child h3 {
+    left: 2.5px;
+  }
+  .countdown-layout3new .countdown-section:last-child h3 {
+    left: 2.5px;
+  }
+  .countdown-layout3new .countdown-section h2 {
+    font-size: 74px;
+    line-height: 1.1;
+    color: #fff;
+    font-weight: 700;
+    position: relative;
+    padding: 0 50px;
+    min-width: 220px;
+  }
+  @media only screen and (max-width: 1199px) {
+    .countdown-layout3new .countdown-section h2 {
+      padding: 0 40px;
+      min-width: 150px;
+    }
+  }
+  @media only screen and (max-width: 991px) {
+    .countdown-layout3new .countdown-section h2 {
+      padding: 0 30px;
+      font-size: 58px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .countdown-layout3new .countdown-section h2 {
+      padding: 0 20px;
+      min-width: 150px;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    .countdown-layout3new .countdown-section h2 {
+      font-size: 40px;
+      padding: 0 15px;
+      min-width: 75px;
+    }
+  }
+  .countdown-layout3new .countdown-section h2:after {
+    content: "\f111";
+    font-family: fontawesome;
+    font-size: 8px;
+    color: #FFF;
+    position: absolute;
+    right: -5px;
+    transform: translateY(-25%);
+    top: 25%;
+  }
+  @media only screen and (max-width: 767px) {
+    .countdown-layout3new .countdown-section h2:after {
+      font-size: 7px;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    .countdown-layout3new .countdown-section h2:after {
+      font-size: 7px;
+      right: -2.5px;
+    }
+  }
+  .countdown-layout3new .countdown-section h2:before {
+    content: "\f111";
+    font-family: fontawesome;
+    font-size: 8px;
+    color: #fff;
+    position: absolute;
+    right: -5px;
+    transform: translateY(-75%);
+    top: 75%;
+  }
+  @media only screen and (max-width: 767px) {
+    .countdown-layout3new .countdown-section h2:before {
+      font-size: 7px;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    .countdown-layout3new .countdown-section h2:before {
+      font-size: 7px;
+      right: -2.5px;
+    }
+  }
+  .countdown-layout3new .countdown-section h3 {
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 16px;
+  }
+  @media only screen and (max-width: 991px) {
+    .countdown-layout3new .countdown-section h3 {
+      font-size: 16px;
+      bottom: -20px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .countdown-layout3new .countdown-section h3 {
+      font-size: 16px;
+      bottom: -32px;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    .countdown-layout3new .countdown-section h3 {
+      font-size: 14px;
+      bottom: -22px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .countdown-layout3new .countdown-section.cs2sd h2:after {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .countdown-layout3new .countdown-section.cs2sd h2:before {
+      display: none;
+    }
+  }
+  .countdown-layout3new .widget h3::after {
+    display: none;
+  }
+
+  /* Countdown Layout 4 */
+  .countdown-layout-4 {
+    text-align: center;
+    padding: 30px;
+    background-color: #00FFFF;
+    display: inline-block;
+  }
+
+  .countdown-layout-4 .countdown-content .title{
+    margin-bottom: 0;
+    color: #fff;
+    font-weight: 600;
+  }
+
+  .countdown-layout-4 .countdown-content .sub-title{
+    margin-bottom: 10px;
+    color: #fff;
+    font-weight: 600;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .countdown-layout-4 .event-countdown {
+      text-align: center;
+    }
+  }
+
+  .countdown-layout-4 .countdown-section {
+    background: #4c1864;
+    text-align: center;
+    height: 150px;
+    display: inline-block;
+    position: relative;
+    margin-right: 25px;
+    padding: 15px 0 0;
+    border-radius: 20px;
+  }
+
+  .countdown-layout-4 .countdown-section:last-child{
+    margin-right: 0;
+  }
+
+  @media only screen and (max-width: 1199px) {
+    .countdown-layout-4 .countdown-section {
+      margin-bottom: 25px;
+      padding: 15px 0;
+      height: 118px;
+    }
+  }
+
+  .countdown-layout-4 .countdown-section h2 {
+    font-size: 60px;
+    line-height: 1.3;
+    color: #fff;
+    font-weight: 600;
+    position: relative;
+    width: 100px;
+  }
+  @media only screen and (max-width: 1199px) {
+    .countdown-layout-4 .countdown-section h2 {
+      padding: 0;
+      min-width: 120px;
+      font-size: 48px;
+    }
+  }
+  @media only screen and (max-width: 991px) {
+    .countdown-layout-4 .countdown-section h2 {
+      font-size: 58px;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    .countdown-layout-4 .countdown-section h2 {
+      font-size: 58px;
+    }
+  }
+  .countdown-layout-4 .countdown-section h3 {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 300;
+    border-radius: 0 0 20px 20px;
+    background-color: #310f41;
+    padding: 5px 0;
+  }
+  @media only screen and (max-width: 1199px) {
+    .countdown-layout-4 .countdown-section h3 {
+      bottom: -1px;
+    }
+  }
+  @media only screen and (max-width: 991px) {
+    .countdown-layout-4 .countdown-section h3 {
+      font-size: 16px;
+      bottom: -20px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .countdown-layout-4 .countdown-section h3 {
+      font-size: 16px;
+      bottom: -32px;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    .countdown-layout-4 .countdown-section h3 {
+      font-size: 14px;
+      bottom: -22px;
+    }
+  }
