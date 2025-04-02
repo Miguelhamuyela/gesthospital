@@ -29,10 +29,10 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
 
-        Paginator::useBootstrap();
+       // Paginator::useBootstrap();
 
-        $response['configuration'] = Configuration::first();
+      //  $response['configuration'] = Configuration::first();
 
-        view()->share($response);
+       // view()->share($response);
     }
 }
